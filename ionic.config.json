@@ -1,0 +1,8 @@
+{
+  "name": "mayday",
+  "app_id": "7ce43be8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
