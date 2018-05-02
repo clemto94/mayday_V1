@@ -1,17 +1,38 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar >
+    <ion-title>Mayday</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <button ion-button block clear icon-left class="hello">
+    <ion-icon name="md-chatbubbles"></ion-icon>
+    contacter<br>urgences
+  </button>
+  <ion-grid>
+    <ion-row class="rows">
+      <ion-col col-2 align-self-center class="icon-col">
+        <ion-icon name="ios-book" color="primary"></ion-icon>
+      </ion-col>
+      <ion-col col-8>
+        <button block ion-button outline class="button-row" (click)="hello()">Ma fiche santé</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rows">
+      <ion-col col-2 align-self-center class="icon-col">
+        <ion-icon name="md-contacts" color="primary"></ion-icon>
+      </ion-col>
+      <ion-col col-8>
+        <button block ion-button outline class="button-row">Mes contacts</button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="rows">
+      <ion-col col-2 align-self-center class="icon-col">
+        <ion-icon name="md-heart" color="primary"></ion-icon>
+      </ion-col>
+      <ion-col col-8>
+        <button block ion-button outline class="button-row">Les gestes<br>qui sauvent</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
