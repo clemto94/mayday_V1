@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { UrgencePage } from '../urgence/urgence';
+import { UrgencePage } from './urgence/urgence';
 
 @Component({
   selector: 'page-home',
@@ -11,7 +11,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  hello() {
+  getUrgencePage() {
     this.navCtrl.push(UrgencePage);
   }
 }

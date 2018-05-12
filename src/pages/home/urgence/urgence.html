@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title>Mayday</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!--<ion-content>
+  <div class="conteneur-step">
+    <input type="button" value="" class="button-step">
+    <input type="button" value="" class="button-step">
+    <input type="button" value="" class="button-step">
+    <input type="button" value="" class="button-step">
+    <input type="button" value="" class="button-step">
+    <input type="button" value="" class="button-step">
+  </div>
+</ion-content> -->
+<ion-content padding>
+    <button ion-button block clear icon-left class="hello" (click)="getUrgencePage()">
+      <ion-icon name="md-chatbubbles"></ion-icon>
+      contacter<br>secours
+    </button>
+    <ion-grid>
+      <ion-row class="rows">
+        <ion-col col-2 align-self-center class="icon-col">
+          <ion-icon name="ios-book" color="primary"></ion-icon>
+        </ion-col>
+        <ion-col col-8>
+          <button block ion-button outline class="button-row">Mon urgence</button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="rows">
+        <ion-col col-2 align-self-center class="icon-col">
+          <ion-icon name="md-contacts" color="primary"></ion-icon>
+        </ion-col>
+        <ion-col col-8>
+          <button block ion-button outline class="button-row">Mes contacts</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

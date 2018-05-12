@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button block clear icon-left class="hello">
+  <button ion-button block clear icon-left class="hello" (click)="getUrgencePage()">
     <ion-icon name="md-chatbubbles"></ion-icon>
     contacter<br>urgences
   </button>
@@ -15,7 +15,7 @@
         <ion-icon name="ios-book" color="primary"></ion-icon>
       </ion-col>
       <ion-col col-8>
-        <button block ion-button outline class="button-row" (click)="hello()">Ma fiche santé</button>
+        <button block ion-button outline class="button-row">Ma fiche santé</button>
       </ion-col>
     </ion-row>
     <ion-row class="rows">
