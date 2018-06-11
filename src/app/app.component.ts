@@ -20,10 +20,8 @@ export class MyApp {
       splashScreen.hide();
       this.screenOrientation.lock("portrait").then(function(obj) {
         console.log(obj);
-        console.log("ici");
       }, function(obj) {
         console.log(obj);
-        console.log("la");
       });
     });
   }
