@@ -21,8 +21,4 @@ export class UrgencePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad UrgencePage');
   }
-  selectedFriends() {}
-  selectedEnemies() {}
-  selectedEnemies1() {}
-  selectedEnemies2() {}
 }

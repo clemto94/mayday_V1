@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ScreenOrientation } from '@ionic-native/screen-orientation'
 import { UrgencePage } from '../pages/home/urgence/urgence';
 
 @NgModule({
@@ -37,6 +38,7 @@ import { UrgencePage } from '../pages/home/urgence/urgence';
   providers: [
     StatusBar,
     SplashScreen,
+    ScreenOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

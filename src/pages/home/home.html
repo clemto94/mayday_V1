@@ -1,38 +1,46 @@
 <ion-header>
   <ion-navbar >
-    <ion-title>Mayday</ion-title>
+    <ion-title>
+      <img src="../../assets/imgs/logo_png.png" class="logo-title">
+    </ion-title> 
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <button ion-button block clear icon-left class="hello" (click)="getUrgencePage()">
-    <ion-icon name="md-chatbubbles"></ion-icon>
-    contacter<br>urgences
-  </button>
   <ion-grid>
-    <ion-row class="rows">
-      <ion-col col-2 align-self-center class="icon-col">
-        <ion-icon name="ios-book" color="primary"></ion-icon>
-      </ion-col>
-      <ion-col col-8>
-        <button block ion-button outline class="button-row">Ma fiche santé</button>
-      </ion-col>
+    <ion-row justify-content-center align-items-center>
+      <!--<img src="../../assets/imgs/logo_mayday_plein.png" class="logo-home">-->
+      <button ion-button class="test" clear color="light" (click)="getUrgencePage()">
+        <span class="text-button_home">Contacter<br>urgences</span>
+      </button>
     </ion-row>
-    <ion-row class="rows">
-      <ion-col col-2 align-self-center class="icon-col">
-        <ion-icon name="md-contacts" color="primary"></ion-icon>
-      </ion-col>
-      <ion-col col-8>
-        <button block ion-button outline class="button-row">Mes contacts</button>
-      </ion-col>
-    </ion-row>
-    <ion-row class="rows">
-      <ion-col col-2 align-self-center class="icon-col">
-        <ion-icon name="md-heart" color="primary"></ion-icon>
-      </ion-col>
-      <ion-col col-8>
-        <button block ion-button outline class="button-row">Les gestes<br>qui sauvent</button>
-      </ion-col>
+    <ion-row>
+      <ion-grid>
+        <ion-row>
+          <ion-col align-self-center col-3>
+            <img src="../../assets/imgs/fiche_santé.png" class="logo-grid">  
+          </ion-col>
+          <ion-col align-self-center>
+            <button block ion-button outline class="button-row">Ma fiche santé</button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col align-self-center col-3>
+            <img src="../../assets/imgs/contacts.png" class="logo-grid">            
+          </ion-col>
+          <ion-col align-self-center>
+            <button block ion-button outline class="button-row">Mes contacts</button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col align-self-center col-3>
+            <img src="../../assets/imgs/gestequisauvent.png" class="logo-grid">            
+          </ion-col>
+          <ion-col align-self-center>
+            <button block ion-button outline class="button-row geste">Les gestes<br>qui sauvent</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-row>
   </ion-grid>
 </ion-content>

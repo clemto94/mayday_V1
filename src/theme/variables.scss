@@ -12,8 +12,12 @@ $font-path: "../assets/fonts";
 $app-direction: ltr;
 
 
+
 @import "ionic.globals";
 
+$font-family-md-base: "Miso";
+$font-family-ios-base: "Miso";
+$font-family-wp-base: "Miso";
 
 // Shared Variables
 // --------------------------------------------------
@@ -34,7 +38,7 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    #7abcff,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #cbeaf1,

@@ -14,3 +14,18 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face {
+    font-family: 'Miso';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso'), url('../../assets/font/miso.woff') format('woff');
+    src: local('Miso1'), url('../../assets/font/miso-regular.otf') format('otf');
+    src: local('Miso2'), url('../../assets/font/miso-regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Miso1';
+    font-style: normal;
+    font-weight: normal;
+    // src: local('Miso'), url('../../assets/font/miso-regular.otf') format('otf');
+    src: local('Miso'), url('../../assets/font/miso-regular.ttf') format('ttf');
+}
