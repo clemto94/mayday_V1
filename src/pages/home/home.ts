@@ -12,6 +12,12 @@ export class HomePage {
 
   }
   getUrgencePage() {
-    this.navCtrl.push(UrgencePage);
+    this.navCtrl.push(UrgencePage, {}, {direction: "bottom-to-top"});
   }
+  removePage(){
+    return this.navCtrl.removeView(this.navCtrl.getActive())
+  }
+  // ionViewWillEnter(){
+  //   this.removePage()
+  // }
 }
