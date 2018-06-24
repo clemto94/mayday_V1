@@ -1,21 +1,41 @@
-<ion-header>
-  <ion-navbar hideBackButton>
-    <ion-title>Mayday</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<!--<ion-content>
-  <div class="conteneur-step">
-    <input type="button" value="" class="button-step">
-    <input type="button" value="" class="button-step">
-    <input type="button" value="" class="button-step">
-    <input type="button" value="" class="button-step">
-    <input type="button" value="" class="button-step">
-    <input type="button" value="" class="button-step">
-  </div>
-</ion-content> -->
 <ion-content padding>
- <h1>hello</h1>
- <h1>hello</h1>
- <h1>hello</h1>
+  <div class="header-urgence">
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col col-10 align-self-center> 
+          <img src="../../assets/imgs/logo_png.png" class="logo-title-urgence">
+        </ion-col>
+        <ion-col col-2 align-self-center>
+          <button ion-button outline icon-only color="dark"  clear (click)="closeNavController()">
+            <ion-icon name="close" ios="ios-close" md="md-close" class="test1"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="root-urgence">
+    <ion-grid>
+      <ion-row>
+        <button ion-button class="button-logo-urgence" clear color="primary">
+          <span class="text-button-urgence">Contact<br>secours</span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-urgence">
+            <span><img src="../../assets/imgs/gestequisauvent.png" class="logo-mon-urgence"></span>
+            <span>mon urgence<br>
+              <p style="font-size: 0.5em; margin: 0.2em;text-align: justify;">spécifier mon urgence en <br>quelques clics pour une <br>prise en charge adaptée</p>
+            </span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-urgence">
+            <span><img src="../../assets/imgs/logo_mayday_alerteSecours.png" class="logo-alerte-secours"></span>
+            <span >alerte secours<br>
+              <p style="font-size: 0.5em; margin: 0.2em;text-align: justify;">envoyer une alerte sans <br>préciser le type d'urgence</p>
+            </span>
+        </button>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
