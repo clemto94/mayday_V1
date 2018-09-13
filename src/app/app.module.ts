@@ -13,9 +13,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ScreenOrientation } from '@ionic-native/screen-orientation'
 import { UrgencePage } from '../pages/home/urgence/urgence';
-import { MonUrgencePage } from '../pages/mon-urgence/mon-urgence';
+import { MonUrgencePage } from '../pages/home/urgence/mon-urgence/mon-urgence';
 import { TestNavPage } from '../pages/test-nav/test-nav';
-import { TypeUrgence_1Page } from '../pages/type-urgence-1/type-urgence-1';
+import { TypeUrgence_1Page } from '../pages/home/urgence/type-urgence-1/type-urgence-1';
 
 @NgModule({
   declarations: [

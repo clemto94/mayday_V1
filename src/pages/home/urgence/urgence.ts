@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TestNavPage } from '../../test-nav/test-nav'
-import { MonUrgencePage } from '../../mon-urgence/mon-urgence'
+import { MonUrgencePage } from './mon-urgence/mon-urgence'
 /**
  * Generated class for the UrgencePage page.
  *
