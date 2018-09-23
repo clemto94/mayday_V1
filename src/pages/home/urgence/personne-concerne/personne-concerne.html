@@ -11,23 +11,7 @@
 </ion-content> -->
 <ion-content padding>
   <div class="header-urgence">
-    <ion-grid>
-      <ion-row justify-content-center>
-        <ion-col col-2 align-self-center>
-          <button ion-button outline icon-only color="dark"  clear (click)="getBeforePage()">
-            <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>            
-          </button>
-        </ion-col>
-        <ion-col col-8 align-self-center> 
-          <img src="../../assets/imgs/logo_png.png" class="logo-title-mon-urgence">
-        </ion-col>
-        <ion-col col-2 align-self-center>
-          <button ion-button outline icon-only color="dark"  clear (click)="closeNavController()">
-            <ion-icon name="close" ios="ios-close" md="md-close" class="test1"></ion-icon>
-          </button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <mayday-header-form (closePage)='closeNavController()' (beforePage)='getBeforePage()'></mayday-header-form>
   </div>
   <div class="root-urgence">
     <ion-grid>

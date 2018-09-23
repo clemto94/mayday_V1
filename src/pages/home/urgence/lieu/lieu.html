@@ -14,10 +14,6 @@
     <mayday-header-form (closePage)='closeNavController()' (beforePage)='getBeforePage()'></mayday-header-form>
   </div>
   <div class="root-urgence">
-    <!-- <auther-one [input]='variableBind' (unEvent)='eventFunction($event)'></auther-one>
-    <br>
-    <auther-one input='hello bernard'></auther-one>
-    <br> -->
-    <mayday-emergency-material [data]='navParams.data.typeUrgence_1' (dataOutput)='goToLieuPage($event)'></mayday-emergency-material>
+    <mayday-lieu *ngIf="navParams.data.typeUrgence_1 !== 'médicale'" (dataOutput)='getAfterPage($event)' [data]='navParams.data.typeUrgence_1'></mayday-lieu>
   </div>
 </ion-content>

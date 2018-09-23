@@ -12,7 +12,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
 })
 export class MaydayEmergencyMaterialComponent {
   @Input('data') dataInput
-  @Output() dataOutput = new EventEmitter ()
+  @Output() dataOutput = new EventEmitter()
 
   private textDisplay: string[] = ['', '', '', ''];
   private datasDisplay= {

@@ -1,0 +1,22 @@
+<ion-grid>
+  <ion-row>
+    <button ion-button class="button-logo-urgence" clear color="primary">
+      <span class="text-button-urgence">le lieu<br>de l'incident</span>
+    </button>
+  </ion-row>
+  <ion-row *ngFor='let data of datasDisplay[dataInput]'>
+    <button block ion-button outline class="button-row-mon-urgence" (click)="goToIndividusPage(data)">
+      <span>{{ data }}</span>
+    </button>
+  </ion-row>
+  <!-- <ion-row>
+    <button block ion-button outline class="button-row-mon-urgence" (click)="goToIndividusPage('matérielle')">
+      <span></span>
+    </button>
+  </ion-row>
+  <ion-row>
+    <button block ion-button outline class="button-row-mon-urgence" (click)="goToIndividusPage('sécuritaire')">
+      <span></span>
+    </button>
+  </ion-row> -->
+</ion-grid>
