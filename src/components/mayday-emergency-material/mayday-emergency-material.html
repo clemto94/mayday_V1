@@ -1,0 +1,39 @@
+<!-- Generated template for the MaydayEmergencyMaterialComponent component -->
+<div>
+  <ion-grid>
+    <ion-row>
+      <button ion-button class="button-logo-urgence" clear color="primary">
+        <span class="text-button-urgence">Type<br>d'urgence<br>2/2</span>
+      </button>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button block ion-button outline class="button-row-mon-urgence" (click)='emitEvent(textDisplay[0])'>
+          <span>{{ textDisplay[0] }}</span>
+        </button>
+      </ion-col>
+      <ion-col>
+          <button block ion-button outline class="button-row-mon-urgence" (click)='emitEvent(textDisplay[1])'>
+            <span>{{ textDisplay[1] }}</span>
+          </button>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button block ion-button outline class="button-row-mon-urgence" (click)='emitEvent(textDisplay[2])'>
+          <span>{{ textDisplay[2] }}</span>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button block ion-button outline class="button-row-mon-urgence" (click)='emitEvent(textDisplay[3])'>
+          <span>{{ textDisplay[3] }}</span>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <button block ion-button outline class="button-row-mon-urgence" (click)='emitEvent("autre")'>
+        <span>autre</span>
+      </button>
+    </ion-row>
+  </ion-grid>
+</div>

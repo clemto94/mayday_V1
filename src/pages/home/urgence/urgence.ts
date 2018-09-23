@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DIRECTION_FORWARD, DIRECTION_SWITCH, DIRECTION_BACK } from 'ionic-angular/navigation/nav-util';
 import { TestNavPage } from '../../test-nav/test-nav'
-import { MonUrgencePage } from './mon-urgence/mon-urgence'
+import { PersonneConcernePage } from './personne-concerne/personne-concerne'
 /**
  * Generated class for the UrgencePage page.
  *
@@ -30,7 +31,7 @@ export class UrgencePage {
   //   return 1
   // }
   closeNavController(){
-    return this.navCtrl.remove(1,1).then(result => {
+    return this.navCtrl.remove(1,this.navCtrl.indexOf(this.navCtrl.getActive())).then(result => {
       console.log(result)
     }).catch(info => {
       console.log(info)
@@ -42,7 +43,7 @@ export class UrgencePage {
   ionViewWillUnload(){
    console.log('detruit')
   }
-  getMonUrgencePage(){
-    return this.navCtrl.push(MonUrgencePage, {}, {direction: "bottom-to-top"});
+  getPersonneConcernePage(){
+    return this.navCtrl.push(PersonneConcernePage, {});
   }
 }

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { TypeUrgence_2Page } from './type-urgence-2/type-urgence-2'
+
 /**
  * Generated class for the TypeUrgence_1Page page.
  *
@@ -14,13 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'type-urgence-1.html',
 })
 export class TypeUrgence_1Page {
-  private personneConcerne
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    console.log('param', navParams.get('personneConcerne'))
-    this.personneConcerne = navParams.get('personneConcerne')
-  }
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) { }
+
   closeNavController(){
-    return this.navCtrl.remove(1,3).then(result => {
+    return this.navCtrl.remove(1,this.navCtrl.indexOf(this.navCtrl.getActive())).then(result => {
       console.log(result)
     }).catch(info => {
       console.log(info)
@@ -30,9 +30,13 @@ export class TypeUrgence_1Page {
     return this.navCtrl.pop()
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TypeUrgence_1Page');
+    console.log('page type urgence 1', this.navParams.data)
   }
-  test(){
-    console.log('personne', this.personneConcerne)
+  goToTypeUrgence2(value) {
+    this.navParams.data.typeUrgence_1 = value
+    return this.navCtrl.push(
+      TypeUrgence_2Page,
+      this.navParams.data
+    )
   }
 }

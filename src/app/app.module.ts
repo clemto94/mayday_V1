@@ -13,10 +13,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ScreenOrientation } from '@ionic-native/screen-orientation'
 import { UrgencePage } from '../pages/home/urgence/urgence';
-import { MonUrgencePage } from '../pages/home/urgence/mon-urgence/mon-urgence';
+import { PersonneConcernePage } from '../pages/home/urgence/personne-concerne/personne-concerne';
 import { TestNavPage } from '../pages/test-nav/test-nav';
 import { TypeUrgence_1Page } from '../pages/home/urgence/type-urgence-1/type-urgence-1';
+import { TypeUrgence_2Page } from '../pages/home/urgence/type-urgence-1/type-urgence-2/type-urgence-2';
 
+import { ComponentsModule } from '../components/components.module'
 @NgModule({
   declarations: [
     MyApp,
@@ -27,12 +29,14 @@ import { TypeUrgence_1Page } from '../pages/home/urgence/type-urgence-1/type-urg
     UrgencePage,
     TestNavPage,
     TabsPage,
-    MonUrgencePage,
-    TypeUrgence_1Page
+    PersonneConcernePage,
+    TypeUrgence_1Page,
+    TypeUrgence_2Page
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,8 +48,9 @@ import { TypeUrgence_1Page } from '../pages/home/urgence/type-urgence-1/type-urg
     TabsPage,
     TestNavPage,
     UrgencePage,
-    MonUrgencePage,
-    TypeUrgence_1Page
+    PersonneConcernePage,
+    TypeUrgence_1Page,
+    TypeUrgence_2Page
   ],
   providers: [
     StatusBar,
