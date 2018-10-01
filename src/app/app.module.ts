@@ -22,6 +22,7 @@ import { TestNavPage } from '../pages/test-nav/test-nav'
 import { TypeUrgence_1Page } from '../pages/home/urgence/type-urgence-1/type-urgence-1'
 import { TypeUrgence_2Page } from '../pages/home/urgence/type-urgence-1/type-urgence-2/type-urgence-2'
 import { LieuPage } from '../pages/home/urgence/lieu/lieu'
+import { IndividusSurLieuxPage } from '../pages/home/urgence/lieu/individus-sur-lieux/individus-sur-lieux'
 
 // custom components
 import { ComponentsModule } from '../components/components.module'
@@ -39,7 +40,8 @@ import { ComponentsModule } from '../components/components.module'
     PersonneConcernePage,
     TypeUrgence_1Page,
     TypeUrgence_2Page,
-    LieuPage
+    LieuPage,
+    IndividusSurLieuxPage
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { ComponentsModule } from '../components/components.module'
     PersonneConcernePage,
     TypeUrgence_1Page,
     TypeUrgence_2Page,
-    LieuPage
+    LieuPage,
+    IndividusSurLieuxPage
   ],
   providers: [
     StatusBar,
