@@ -1,6 +1,6 @@
 <ion-content padding>
   <div class="header-urgence">
-    <mayday-header-form (closePage)='closeNavController()' firstPage='true'></mayday-header-form>
+    <mayday-header-form (closePage)='closeNavController()' (beforePage)='getBeforePage()' firstPage='true'></mayday-header-form>
   </div>
   <div class="root-urgence">
     <ion-grid>

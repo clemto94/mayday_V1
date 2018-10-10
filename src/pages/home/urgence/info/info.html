@@ -1,0 +1,35 @@
+<ion-content padding>
+  <div class="header-urgence">
+    <mayday-header-form (closePage)='closeNavController()' (beforePage)='getBeforePage()'></mayday-header-form>
+  </div>
+  <div class="root-urgence">
+    <ion-grid>
+      <ion-row>
+        <button ion-button class="button-logo-urgence" clear color="primary">
+          <span class="text-button-urgence">NE PRENEZ<br>AUCUN<br>RISQUE !</span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <p class="text-info">
+          - Restez à l'endroit où vous êtes, si vous pouvez vous y cacher ou essayer de sortir votre 
+          domicile si cela vous semble possible sans prendre de risque
+        </p>
+      </ion-row>
+      <ion-row>
+        <p class="text-info">
+          - Attendez l'arrivée et l'intervention des forces de l'ordre avant de vous manifester.
+        </p>
+      </ion-row>
+      <ion-row>
+        <p class="text-info">
+          - N'aller pas à la rencontre des voleurs.
+        </p>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-info" (click)="getInfoPage('je ne sais pas')">
+          <span>continuer</span>
+        </button>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

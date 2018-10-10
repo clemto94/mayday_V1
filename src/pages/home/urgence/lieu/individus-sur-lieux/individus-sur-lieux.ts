@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { Component } from '@angular/core'
+import { IonicPage, NavController, NavParams } from 'ionic-angular'
+import { InfoPage } from "../../info/info"
 /**
  * Generated class for the IndividusSurLieuxPage page.
  *
@@ -28,7 +28,14 @@ export class IndividusSurLieuxPage {
     return this.navCtrl.pop()
   }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IndividusSurLieuxPage');
+    console.log('ionViewDidLoad IndividusSurLieuxPage')
   }
-
+  getInfoPage(info){
+    this.navParams.data.information = info
+    console.log(this.navParams.data)
+    return this.navCtrl.push(
+      InfoPage,
+      this.navParams.data
+    )
+  }
 }

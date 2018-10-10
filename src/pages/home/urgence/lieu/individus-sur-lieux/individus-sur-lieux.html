@@ -3,34 +3,32 @@
     <mayday-header-form (closePage)='closeNavController()' (beforePage)='getBeforePage()'></mayday-header-form>
   </div>
   <div class="root-urgence">
-    <div class="root-urgence">
-      <ion-grid>
-        <ion-row>
-          <button ion-button class="button-logo-urgence" clear color="primary">
-            <span class="text-button-urgence">Des individus<br>sont-ils sur<br>les lieux</span>
-          </button>
-        </ion-row>
-        <ion-row>
-          <button block ion-button outline class="button-row-individus" (click)="goToTypeUrgence2('médicale')">
-            <span>non, personne n'est présent.<br>
-              <p style="font-size: 0.6em; margin: 0.2em;text-align: center;">j'ai pu vérifier qu'aucun individu n'était<br>encore présent dans mon domicile.</p>
-            </span>
-          </button>
-        </ion-row>
-        <ion-row>
-          <button block ion-button outline class="button-row-individus" (click)="goToTypeUrgence2('matérielle')">
-            <span>oui, les voleurs sont là !<br>
-              <p style="font-size: 0.6em; margin: 0.2em;text-align: center;">ne prenez aucun risque, ne bouger pas de<br>l'endroit ou vous vous trouvez.</p>
-            </span>
-          </button>
-        </ion-row>
-        <ion-row>
-          <button block ion-button outline class="button-row-individus-3" (click)="goToTypeUrgence2('sécuritaire')">
-            <span>je ne sais pas.</span>
-          </button>
-        </ion-row>
-      </ion-grid>
-    </div>
+    <ion-grid>
+      <ion-row>
+        <button ion-button class="button-logo-urgence" clear color="primary">
+          <span class="text-button-urgence">Des individus<br>sont-ils sur<br>les lieux</span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-individus" (click)="getInfoPage('non')">
+          <span>non, personne n'est présent.<br>
+            <p style="font-size: 0.6em; margin: 0.2em;text-align: center;">j'ai pu vérifier qu'aucun individu n'était<br>encore présent dans mon domicile.</p>
+          </span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-individus" (click)="getInfoPage('oui')">
+          <span>oui, les voleurs sont là !<br>
+            <p style="font-size: 0.6em; margin: 0.2em;text-align: center;">ne prenez aucun risque, ne bouger pas de<br>l'endroit ou vous vous trouvez.</p>
+          </span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-individus-3" (click)="getInfoPage('je ne sais pas')">
+          <span>je ne sais pas.</span>
+        </button>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
   

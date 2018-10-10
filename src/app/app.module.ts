@@ -18,11 +18,11 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation'
 // page de navigation
 import { UrgencePage } from '../pages/home/urgence/urgence'
 import { PersonneConcernePage } from '../pages/home/urgence/personne-concerne/personne-concerne'
-import { TestNavPage } from '../pages/test-nav/test-nav'
 import { TypeUrgence_1Page } from '../pages/home/urgence/type-urgence-1/type-urgence-1'
 import { TypeUrgence_2Page } from '../pages/home/urgence/type-urgence-1/type-urgence-2/type-urgence-2'
 import { LieuPage } from '../pages/home/urgence/lieu/lieu'
 import { IndividusSurLieuxPage } from '../pages/home/urgence/lieu/individus-sur-lieux/individus-sur-lieux'
+import { InfoPage } from '../pages/home/urgence/info/info'
 
 // custom components
 import { ComponentsModule } from '../components/components.module'
@@ -34,14 +34,14 @@ import { ComponentsModule } from '../components/components.module'
     ContactPage,
     HomePage,
     MesUrgengesPage,
-    UrgencePage,
-    TestNavPage,
     TabsPage,
+    UrgencePage,
     PersonneConcernePage,
     TypeUrgence_1Page,
     TypeUrgence_2Page,
     LieuPage,
-    IndividusSurLieuxPage
+    IndividusSurLieuxPage,
+    InfoPage
   ],
   imports: [
     BrowserModule,
@@ -56,13 +56,13 @@ import { ComponentsModule } from '../components/components.module'
     HomePage,
     MesUrgengesPage,
     TabsPage,
-    TestNavPage,
     UrgencePage,
     PersonneConcernePage,
     TypeUrgence_1Page,
     TypeUrgence_2Page,
     LieuPage,
-    IndividusSurLieuxPage
+    IndividusSurLieuxPage,
+    InfoPage
   ],
   providers: [
     StatusBar,
