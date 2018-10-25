@@ -1,0 +1,31 @@
+<ion-content padding>
+  <div class="header-urgence">
+    <mayday-header-form (closePage)='closeNavController()' (beforePage)='getBeforePage()' firstPage='true'></mayday-header-form>
+  </div>
+  <div class="root-urgence">
+    <ion-grid>
+      <ion-row>
+        <div class="conteneur-text-validation">
+          <p class="text-validation">
+            Votre urgence est <br>en cours de traitement
+          </p>
+        </div>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-mon-urgence" >
+          <span class="text-button-urgence">suivre sur la carte</span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-mon-urgence" (click)="getContact()">
+          <span class="text-button-urgence">prévenir mes contacts</span>
+        </button>
+      </ion-row>
+      <ion-row>
+        <button block ion-button outline class="button-row-mon-urgence">
+          <span class="text-button-urgence">consignes à suivre en <br>attendant les urgences</span>
+        </button>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

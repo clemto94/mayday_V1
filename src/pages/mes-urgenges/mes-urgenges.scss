@@ -1,3 +1,7 @@
-page-mes-urgenges {
-
+.item-button-mes-urgences{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  overflow: auto;
 }

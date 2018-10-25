@@ -1,0 +1,21 @@
+<ion-content padding>
+  <div class="header-urgence">
+    <mayday-header-form (closePage)='closeNavController()' (beforePage)='getBeforePage()'></mayday-header-form>
+  </div>
+  <div class="root-urgence">
+    <ion-grid>
+      <ion-row>
+        <div class="conteneur-text-validation">
+          <p class="text-validation">
+            Votre déclaration d'urgence est complète, voulez-vous la valider ?
+          </p>
+        </div>
+      </ion-row>
+      <ion-row class="boutton-valider-validationPage">
+        <button block ion-button outline class="button-row-info" (click)="sendUrgence()">
+          <span>Valider</span>
+        </button>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

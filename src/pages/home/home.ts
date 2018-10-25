@@ -17,7 +17,4 @@ export class HomePage {
   removePage(){
     return this.navCtrl.removeView(this.navCtrl.getActive())
   }
-  // ionViewWillEnter(){
-  //   this.removePage()
-  // }
 }

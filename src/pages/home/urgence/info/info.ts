@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { ValidationPage } from '../../../home/validation/validation'
 /**
  * Generated class for the InfoPage page.
  *
@@ -15,8 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InfoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  
   closeNavController(){
     return this.navCtrl.remove(1,this.navCtrl.indexOf(this.navCtrl.getActive())).then(result => {
       console.log(result)
@@ -30,5 +30,11 @@ export class InfoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfoPage');
   }
-
+  getValidationPage() {
+    console.log(this.navParams.data)
+    return this.navCtrl.push(
+      ValidationPage,
+      this.navParams.data
+    )
+  }
 }

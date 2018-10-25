@@ -1,0 +1,25 @@
+page-validation{
+
+}
+.conteneur-text-validation{
+  border: solid;
+  border-color: #7abcff;
+  border-radius: 0.5em;
+}
+.text-validation{
+  font-family: $font-family-ios-base;
+  color: #7abcff;
+  font-size: 2.5em;
+  padding: 0.5em;
+}
+
+.boutton-valider-validationPage{
+  margin-top: 10em;
+}
+
+.toast-ios .toast-wrapper {
+  background: rgb(0, 151, 0);
+}
+.toast-ios .toast-message {
+  font-size: 1.5em;
+}

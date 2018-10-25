@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>mes-urgenges</ion-title>
+    <ion-title>Historique des urgences</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,11 +15,23 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>
-      historique des urgences
-    </ion-list-header>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item }}
-    </button> 
+    <ion-item-sliding #slidingItem *ngFor="let item of urgenceSaved">
+      <button ion-item  (click)="getDetailPage(item)" >
+        <div class="item-button-mes-urgences">
+          <div>
+            Urgence {{ item.typeUrgence_1 }} du {{ item.date | date:"d/M/y"}}
+          </div>
+          <div *ngIf="item.enCours">
+            <ion-icon ios="ios-time" md="md-time"></ion-icon>
+          </div>
+        </div>
+      </button>
+      <ion-item-options side="left">
+        <button ion-button color="danger" (click)="swipeDelete(item)">
+          <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+          supprimer
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 </ion-content>
